@@ -7,11 +7,7 @@ class Song < ActiveRecord::Base
   end
 
   def artist_name 
-    self.artist.name if self.artist
-  end
-
-  def notes_attributes=(content)
-    
+    self.artist.name if self.artist.name
   end
 
 end

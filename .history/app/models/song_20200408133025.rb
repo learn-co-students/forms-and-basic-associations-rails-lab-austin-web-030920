@@ -6,12 +6,8 @@ class Song < ActiveRecord::Base
     self.artist = Artist.find_or_create_by(name: name)
   end
 
-  def artist_name 
-    self.artist.name if self.artist
-  end
-
-  def notes_attributes=(content)
-    
+  def artist_name
+    self.artist.name
   end
 
 end
